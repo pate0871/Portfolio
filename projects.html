@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Projects</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html"><img src="pictures/logo_1.png" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">My Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="project1">
+                        <h1>Solitaire</h1>
+                        <p>
+                            This was our final group project for 4th semester and it helped develop our teamwork skills and,
+                            knowledge of agile methodology.
+                            We developed a Klondike solitaire game for Windows, MacOS and Android. 
+                            This game featured 4 different game modes: Standard Deal 1, Vegas Deal 1, Standard Deal 3 and Vegas Deal 3.
+                        </p>
+                        <div class="info">
+                            <div class="tech">
+                                <h4>Technology</h4>
+                                <ul>
+                                    <li>JIRA</li>
+                                    <li>Unity Game Engine</li>
+                                   <li>C#</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                            <div class="devs">
+                                <h4>Developers</h4>
+                                <ul>
+                                    <li>Jenne Stamplecoskie</li>
+                                    <li>Arpit Patel</li>
+                                    <li>Cameron Cosby</li>
+                                    <li>Owen Sarrazin</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn" onclick="window.open('https://github.com/camcosby08/Hulk-Solitaire-Game.git','_blank')"><span>Code</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="solitaire">
+                        <img src="pictures/solitaire_1.png" class="slides slides-hidden">
+                        <img src="pictures/solitaire_2.png" class="slides slides-hidden">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="div1">
+
+            <div class="row">
+                <div class="col">
+                    <div class="website">
+                        <img src="pictures/website_1.png" class="slides_1 slides-hidden_1">
+                        <img src="pictures/website_2.png" class="slides_1 slides-hidden_1">
+                        <img src="pictures/website_3.png" class="slides_1 slides-hidden_1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="project2">
+                        <h1>PaulMar Housing Website</h1>
+                        <p>
+                            This was a personal project that I took on for one of my friend's business.
+                            This website was completed in January 2022 and it helped improved client handling skills.
+                        </p>
+                        <div class="info">
+                            <div class="tech">
+                                <h4>Technology</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>PHP</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                            <div class="devs">
+                                <h4>Developers</h4>
+                                <ul>
+                                    <li>Arpit Patel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p2-btns">
+                        <div class="git">
+                            <button class="btn" onclick="window.open('https://github.com/pate0871/WebsiteProject.git','_blank')"><span>Code</span></button>
+                        </div>
+                        <div class="web">
+                            <button class="btn2" onclick="window.open('https://www.paulmarhousing.com/','_blank')"><span>Website</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="div2">
+
+            <div class="row">
+                <div class="col">
+                    <div class="project3">
+                        <h1>NASA Image of the Day</h1>
+                        <p>
+                            This was a final mobile programming project for 3rd semester course.
+                            This was an image of the day application, which made use of NASA API to obtain daily images.
+                            In this Applicaiton, you can view the image not just for the day but previous image of the days as well by utilizing the calendar function.
+                            you can also store the images for later viewing. 
+                            It was developed in pairs, which assisted in developing our teamwork skills.
+                        </p>
+                        <div class="info">
+                            <div class="tech">
+                                <h4>Technology</h4>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>XML</li>
+                                    <li>Android Studio</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                            <div class="devs">
+                                <h4>Developers</h4>
+                                <ul>
+                                    <li>Arpit Patel</li>
+                                    <li>Graham Everitt</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p3-btns">
+                            <button class="btn" onclick="window.open('https://github.com/grahamcodes/NASA_IotD.git','_blank')"><span>Code</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="nasa">
+                        <img src="pictures/nasa_1.png" class="slides_2 slides-hidden_2">
+                        <img src="pictures/nasa_2.png" class="slides_2 slides-hidden_2">
+                        <img src="pictures/nasa_3.png" class="slides_2 slides-hidden_2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        addEventListener("load", () => {
+            var index = 0;
+            const slides = document.querySelectorAll(".slides");
+            const hideClass = "slides-hidden", count = slides.length;
+            nextSlide();
+
+            function nextSlide() {
+                slides[(index++) % count].classList.add(hideClass);
+                slides[index % count].classList.remove(hideClass);
+                setTimeout(nextSlide, 3000);
+            }
+        });
+    </script>
+    <script>
+          addEventListener("load", () => {
+            var index1 = 0;
+            const slides1 = document.querySelectorAll(".slides_1");
+            const hideClass1 = "slides-hidden_1", count1 = slides1.length;
+            nextSlide_1();
+
+            function nextSlide_1() {
+                slides1[(index1++) % count1].classList.add(hideClass1);
+                slides1[index1 % count1].classList.remove(hideClass1);
+                setTimeout(nextSlide_1, 3000);
+            }
+        });
+    </script>
+    <script>
+        addEventListener("load", () => {
+          var index2 = 0;
+          const slides2 = document.querySelectorAll(".slides_2");
+          const hideClass2 = "slides-hidden_2", count2 = slides2.length;
+          nextSlide_2();
+
+          function nextSlide_2() {
+              slides2[(index2++) % count2].classList.add(hideClass2);
+              slides2[index2 % count2].classList.remove(hideClass2);
+              setTimeout(nextSlide_2, 3000);
+          }
+      });
+  </script>
+</html>

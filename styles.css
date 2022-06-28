@@ -1,0 +1,342 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #202d42, #0a192f);
+    color: #8892b0;
+    position: relative;
+}
+
+.navbar {
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8892b0;
+    font-size: 14px;
+    padding: 5px 2px;
+}
+
+nav ul li a:hover {
+    color: #64ffda;
+}
+
+.row {
+    width: 80%;
+    min-height: 85vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    margin: 20px 0;
+    flex-basis: 50%;
+    min-width: 300px;
+    height: 100%;
+}
+
+.small-icon1 {
+    width: 25px;
+    position:absolute;
+    right: 500px;
+    top: 50px;
+    opacity: 0.3;
+}
+
+.small-icon2 {
+    width: 25px;
+    position: absolute;
+    right: 700px;
+    top: 300px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+.text {
+    max-width: 400px;
+    margin-top: 100px;
+}
+
+.text h1 {
+    font-size: 50px;
+}
+
+/* Icons styles */
+.icons {
+    max-width: 400px;
+    display: block;
+    margin-left: 95px;
+    margin-top: 20px;
+}
+
+.icons a {
+    text-decoration: none;
+    align-items: center;
+    color: #8892b0;
+}
+
+.icons i {
+    margin-left: 50px;
+    position: relative;
+    display:inline-block;
+}
+
+.icons i:hover {
+    color: #64ffda;
+}
+
+.gallery {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.gallery .picOfMe {
+    width: 80%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.slides-hidden {
+    display: none;
+}
+
+.large-icon1 {
+    width: 250px;
+    position: absolute;
+    top: 120px;
+    left: -150px;
+    opacity: 0.3;
+}
+
+.large-icon2 {
+    width: 40px;
+    position: absolute;
+    right: 850px;
+    top: 500px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+/* Project 1: Solitaire Styles */
+.project1 {
+    margin-top: 40px;
+}
+.info {
+    width: 400px;
+}
+
+.tech {
+    width: 200px;
+    float: left;
+}
+
+.devs {
+    width: 200px;
+    float: left;
+}
+
+.solitaire {
+    max-width: 800px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.solitaire img {
+    width: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+/* Button Style */
+.buttons {
+   margin-left: 150px;
+}
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #8892b0;
+    border: none;
+    color: #202d42;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn:hover span {
+    padding-right: 25px;
+    color: #64ffda;
+}
+  
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn2 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #8892b0;
+    border: none;
+    color: #202d42;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.btn2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn2:hover span {
+    padding-right: 25px;
+    color: #64ffda;
+}
+  
+.btn2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* Styles for hr Tags> */
+.div1 {
+    width: 600px;
+    margin-top: -175px;
+}
+
+/* Project2: Website div styles */
+.website {
+    max-width: 700px;
+    position: relative;
+    margin-left: 0px;
+    margin-top: -5px;
+}
+
+.website img {
+    width: 95%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.slides-hidden_1 {
+    display: none;
+}
+
+.project2 {
+    margin-left: 50px;
+    margin-top: -25px;
+}
+
+.p2-btns {
+    width: 250px;
+    display: block;
+    margin-left: 100px;
+}
+
+.git {
+    width:110px;
+    float: right;
+    display: block;
+    margin-left: 30px;
+
+}
+.web {
+    width:110px;
+    float: right;
+}
+
+.div2 {
+    width: 600px;
+    margin-top: -250px;
+}
+
+/* Project 3: NASA IOtD styles */
+.nasa {
+    max-width: 225px;
+    position: relative;
+    margin-left: 100px;
+    margin-top: -5px;
+}
+
+.nasa img {
+    width: 95%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+.slides-hidden_2 {
+    display: none;
+}
+
+.p3-btns {
+    display:block;
+    margin-top: 150px;
+}

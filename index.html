@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <Title>Arpit's Portfolio</Title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/b31799f5a9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="pictures/logo_1.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">My Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="text">
+                        <h1>Welcome to Arpit's Portfolio!</h1>
+                    </div>
+                    <img src="pictures/circle.png" class="small-icon1">
+                    <img src="pictures/square.png" class="small-icon2">
+                </div>
+                <div class="col">
+                    <div class="gallery">
+                        <img src="pictures/website_1.png" class="slides slides-hidden">
+                        <img src="pictures/website_3.png" class="slides slides-hidden">
+                        <img src="pictures/solitaire_2.png" class="slides slides-hidden">
+                        <img src="pictures/snake_1.png" class="slides slides-hidden">
+                    </div>
+                </div>
+            </div>
+
+            <img src="pictures/circle.png" class="large-icon1">
+            <img src="pictures/square.png" class="large-icon2">
+        </div>
+    </body>
+    <script>
+        addEventListener("load", () => {
+            var index = 0;
+            const slides = document.querySelectorAll(".slides");
+            const hideClass = "slides-hidden", count = slides.length;
+            nextSlide();
+
+            function nextSlide() {
+                slides[(index++) % count].classList.add(hideClass);
+                slides[index % count].classList.remove(hideClass);
+                setTimeout(nextSlide, 3000);
+            }
+        });
+    </script>
+</html>
