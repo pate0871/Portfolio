@@ -12,7 +12,7 @@
                 <nav>
                     <ul>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="">My Skills</a></li>
+                        <li><a href="skills.html">My Skills</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -34,7 +34,7 @@
                                 <ul>
                                     <li>JIRA</li>
                                     <li>Unity Game Engine</li>
-                                   <li>C#</li>
+                                    <li>C#</li>
                                     <li>GitHub</li>
                                 </ul>
                             </div>
@@ -76,7 +76,7 @@
                         <h1>PaulMar Housing Website</h1>
                         <p>
                             This was a personal project that I took on for one of my friend's business.
-                            This website was completed in January 2022 and it helped improved client handling skills.
+                            This website was completed in January 2022 and it helped me improve skills when it comes to dealing with clients.
                         </p>
                         <div class="info">
                             <div class="tech">
@@ -116,8 +116,8 @@
                         <p>
                             This was a final mobile programming project for 3rd semester course.
                             This was an image of the day application, which made use of NASA API to obtain daily images.
-                            In this Applicaiton, you can view the image not just for the day but previous image of the days as well by utilizing the calendar function.
-                            you can also store the images for later viewing. 
+                            In this Applicaiton, you can view the image not just for current day but previous image of the days as well by utilizing the calendar function.
+                            You can also store the images for later viewing. 
                             It was developed in pairs, which assisted in developing our teamwork skills.
                         </p>
                         <div class="info">
@@ -148,7 +148,46 @@
                         <img src="pictures/nasa_1.png" class="slides_2 slides-hidden_2">
                         <img src="pictures/nasa_2.png" class="slides_2 slides-hidden_2">
                         <img src="pictures/nasa_3.png" class="slides_2 slides-hidden_2">
+                    </div>
+                </div>
+            </div>
 
+            <hr class="div3">
+
+            <div class="row">
+                <div class="col">
+                    <div class="snake">
+                        <img src="pictures/snake_1.png" class="slides_3 slides-hidden_3">
+                        <img src="pictures/snake_2.png" class="slides_3 slides-hidden_3">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="project4">
+                        <h1>Classic Snake Game</h1>
+                        <p>
+                            This was a final project for 4th Semester course Programming Language Research Course.
+                            This course involved learning a new language and throughout the semester complete a project using that language.
+                            I chose to learn C# and I developed my version of a classic Snake Game.
+                        </p>
+                        <div class="info">
+                            <div class="tech">
+                                <h4>Technology</h4>
+                                <ul>
+                                    <li>C#</li>
+                                    <li>Unity Game Engine</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                            <div class="devs">
+                                <h4>Developers</h4>
+                                <ul>
+                                    <li>Arpit Patel</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p4-btns">
+                            <button class="btn" onclick="window.open('https://github.com/grahamcodes/NASA_IotD.git','_blank')"><span>Code</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,4 +235,18 @@
           }
       });
   </script>
+   <script>
+    addEventListener("load", () => {
+      var index3 = 0;
+      const slides3 = document.querySelectorAll(".slides_3");
+      const hideClass3 = "slides-hidden_3", count3 = slides3.length;
+      nextSlide_3();
+
+      function nextSlide_3() {
+          slides3[(index3++) % count3].classList.add(hideClass3);
+          slides3[index3 % count3].classList.remove(hideClass3);
+          setTimeout(nextSlide_3, 3000);
+      }
+  });
+</script>
 </html>

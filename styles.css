@@ -157,6 +157,7 @@ nav ul li a:hover {
 }
 .info {
     width: 400px;
+    margin-top: -20px;
 }
 
 .tech {
@@ -324,7 +325,7 @@ nav ul li a:hover {
     max-width: 225px;
     position: relative;
     margin-left: 100px;
-    margin-top: -5px;
+    margin-top: 25px;
 }
 
 .nasa img {
@@ -340,3 +341,52 @@ nav ul li a:hover {
     display:block;
     margin-top: 150px;
 }
+
+.div3 {
+    width: 600px;
+    margin-top: -175px;
+}
+
+/* Project 4: Snake Project Styles */
+.snake {
+    max-width: 800px;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.snake img {
+    width: 95%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.slides-hidden_3 {
+    display: none;
+}
+
+.project4 {
+    margin-left: 50px;
+    margin-top: -25px;
+}
+
+.p4-btns {
+    display:block;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+/* Styles for My Skills Page */
+.cloud {
+    width: 500px;
+}
+.tagcloud {
+    font-family: 'Open Sans', sans-serif; 
+    margin: auto;
+    color: #8892b0;
+}
+.tagcloud--item:hover {
+    color: #64ffda;  
+}
+
+
