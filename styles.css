@@ -271,8 +271,8 @@ nav ul li a:hover {
 .large-icon3 {
     width: 250px;
     position: absolute;
-    right: 1200px;
     top: 100px;
+    left: -140px;
     opacity: 0.3;
     transform: rotate(45deg); 
 }
@@ -280,8 +280,8 @@ nav ul li a:hover {
 .large-icon4 {
     width: 300px;
     position: absolute;
-    right: 1125px;
     top: 100px;
+    left: -140px;
     opacity: 0.3;
     transform: rotate(90deg); 
 }
@@ -321,9 +321,11 @@ nav ul li a:hover {
 }
 
 /* Button Style */
-/* .buttons {
-   margin-left: 150px;
-} */
+.buttons {
+    width: 250px;
+    display: block;
+    margin-left: 100px;
+}
 .btn {
     display: inline-block;
     border-radius: 4px;
