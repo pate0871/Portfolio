@@ -9,25 +9,32 @@
     <body>
         <div class="container">
             <div class="navbar">
-                <img src="pictures/logo_1.png" class="logo">
+                <a href="index.html"><img src="pictures/logo_1.png" class="logo"></a>
                 <nav>
                     <ul>
                         <li><a href="about.html">About</a></li>
                         <li><a href="skills.html">My Skills</a></li>
                         <li><a href="projects.html">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="mailto:arpit_patel01@hotmail.com"><button class="contact"><span>Contact</span></button></a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="row">
                 <div class="col">
-                    <!-- Word Sphere -->
                     <div class="cloud">
+                        <!-- Word Sphere -->
                     </div>
                 </div>
                 <div class="col">
-                    
+                    <div class="description">
+                        <h3>Web Development</h3>
+                        <p>&#x2192 HTML, CSS, JavaScript, PHP, React.js</p>
+                        <h3>Application Development</h3>
+                        <p>&#x2192 Java, C#, Android Studio, Spring, Docker, Kubernetes, REST APIs</p>
+                        <h3>Database</h3>
+                        <p>&#x2192 MySQL, SQL Server, Oracle DB, Neo4j, </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,7 +44,7 @@
                             'HTML', 'CSS', 'PHP',
                             'C#', 'Java', 'React.js',
                             'Javascript', 'Android Studio', 'GitHub',
-                            'Unity', 'MySQL', 'SQL Server',
+                            'MySQL', 'SQL Server',
                             'Oracle DB', 'Neo4j', 'Spring',
                             'Docker', 'Kubernetes', 'REST APIs' 
                         ];
@@ -55,7 +62,7 @@
             // 0 = top
             // 90 = left
             // 135 = right-bottom
-            direction: 0,
+            direction: 90,
 
             // interact with cursor move on mouse out
             keep: true

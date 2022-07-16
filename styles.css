@@ -65,7 +65,7 @@ nav ul li a:hover {
 .small-icon1 {
     width: 25px;
     position:absolute;
-    right: 500px;
+    right: 600px;
     top: 50px;
     opacity: 0.3;
 }
@@ -115,7 +115,7 @@ nav ul li a:hover {
 .gallery {
     max-width: 700px;
     position: relative;
-    margin: auto;
+    margin-top: 50px;
 }
 
 .gallery img {
@@ -382,11 +382,62 @@ nav ul li a:hover {
 }
 .tagcloud {
     font-family: 'Open Sans', sans-serif; 
-    margin: auto;
+    margin-top: -25px;
     color: #8892b0;
 }
 .tagcloud--item:hover {
     color: #64ffda;  
 }
+
+.description {
+    margin-top: 150px;
+    margin-left: 100px;
+    
+}
+.description p {
+    padding-left: 2em;
+}
+
+/* Contact button Styles */
+.contact {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #8892b0;
+    border: none;
+    color: #202d42;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.contact span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.contact span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.contact:hover span {
+    padding-right: 25px;
+    color: #64ffda;
+}
+  
+.contact:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 
 
