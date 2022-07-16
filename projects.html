@@ -20,6 +20,18 @@
             </div>
             <div class="row">
                 <div class="col">
+                    <img src="pictures/triangle.png" class="large-icon4">
+                    <img src="pictures/circle.png" class="small-icon1">
+                    <img src="pictures/circle.png" class="small-icon7">
+                    <img src="pictures/square.png" class="small-icon8">
+                    <img src="pictures/square.png" class="small-icon9">
+                    <img src="pictures/triangle.png" class="small-icon10">
+                    <img src="pictures/triangle.png" class="small-icon11">
+                    <img src="pictures/square.png" class="small-icon12">
+                    <img src="pictures/circle.png" class="small-icon13">
+                    <img src="pictures/circle.png" class="small-icon14">
+                    <img src="pictures/circle.png" class="small-icon15">
+
                     <div class="project1">
                         <h1>Solitaire</h1>
                         <p>
@@ -114,7 +126,7 @@
                     <div class="project3">
                         <h1>NASA Image of the Day</h1>
                         <p>
-                            This was a final mobile programming project for 3rd semester course.
+                            This was a final mobile programming project for 2rd semester course.
                             This was an image of the day application, which made use of NASA API to obtain daily images.
                             In this Applicaiton, you can view the image not just for current day but previous image of the days as well by utilizing the calendar function.
                             You can also store the images for later viewing. 
@@ -199,8 +211,42 @@
                     <div class="project5">
                         <h1>COVID Screening & Tracking App</h1>
                         <p>
-                            
+                            This was a group project completed during 3rd semester for Object Oriented Programming course.
+                            We were required to develop a web application using software development life cycle and using OOP design patterns.
+                            Event organizers or office managers could use this application to screen attendee beforehand. We programmed in roles,
+                            and every role had difference access levels. Admin or team owner had access to all the attendee's results for their team and attendees could only view their results.
                         </p>
+                        <div class="info">
+                            <div class="tech">
+                                <h4>Technology</h4>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JSPs</li>
+                                    <li>Tomcat 9.0</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                            <div class="devs">
+                                <h4>Developers</h4>
+                                <ul>
+                                    <li>Jenne Stamplecoskie</li>
+                                    <li>Arpit Patel</li>
+                                    <li>Cameron Cosby</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p5-btns">
+                            <button class="btn" onclick="window.open('https://github.com/JediStamp/COVIDApp.git','_blank')"><span>Code</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="covidApp">
+                        <img src="pictures/covid_1.png" class="slides_4 slides-hidden_4">
+                        <img src="pictures/covid_2.png" class="slides_4 slides-hidden_4">
+                        <img src="pictures/covid_5.png" class="slides_4 slides-hidden_4">
                     </div>
                 </div>
             </div>
@@ -246,20 +292,34 @@
               slides2[index2 % count2].classList.remove(hideClass2);
               setTimeout(nextSlide_2, 3000);
           }
-      });
-  </script>
-   <script>
-    addEventListener("load", () => {
-      var index3 = 0;
-      const slides3 = document.querySelectorAll(".slides_3");
-      const hideClass3 = "slides-hidden_3", count3 = slides3.length;
-      nextSlide_3();
+        });
+    </script>
+    <script>
+        addEventListener("load", () => {
+            var index3 = 0;
+            const slides3 = document.querySelectorAll(".slides_3");
+            const hideClass3 = "slides-hidden_3", count3 = slides3.length;
+            nextSlide_3();
 
-      function nextSlide_3() {
-          slides3[(index3++) % count3].classList.add(hideClass3);
-          slides3[index3 % count3].classList.remove(hideClass3);
-          setTimeout(nextSlide_3, 3000);
-      }
-  });
-</script>
+            function nextSlide_3() {
+                slides3[(index3++) % count3].classList.add(hideClass3);
+                slides3[index3 % count3].classList.remove(hideClass3);
+                setTimeout(nextSlide_3, 3000);
+            }
+        });
+    </script>
+    <script>
+        addEventListener("load", () => {
+            var index4 = 0;
+            const slides4 = document.querySelectorAll(".slides_4");
+            const hideClass4 = "slides-hidden_4", count4 = slides4.length;
+            nextSlide_4();
+
+            function nextSlide_4() {
+                slides4[(index4++) % count4].classList.add(hideClass4);
+                slides4[index4 % count4].classList.remove(hideClass4);
+                setTimeout(nextSlide_4, 3000);
+            }
+        });
+    </script>
 </html>

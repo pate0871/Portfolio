@@ -62,23 +62,6 @@ nav ul li a:hover {
     height: 100%;
 }
 
-.small-icon1 {
-    width: 25px;
-    position:absolute;
-    right: 600px;
-    top: 50px;
-    opacity: 0.3;
-}
-
-.small-icon2 {
-    width: 25px;
-    position: absolute;
-    right: 700px;
-    top: 300px;
-    opacity: 0.3;
-    transform: rotate(45deg); 
-}
-
 .text {
     max-width: 400px;
     margin-top: 100px;
@@ -134,22 +117,177 @@ nav ul li a:hover {
     display: none;
 }
 
+/* Styles for Small shapes */
+
+.small-icon1 {
+    width: 25px;
+    position:absolute;
+    right: 600px;
+    top: 50px;
+    opacity: 0.3;
+}
+
+.small-icon2 {
+    width: 25px;
+    position: absolute;
+    right: 700px;
+    top: 300px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+.small-icon3 {
+    width: 50px;
+    position: absolute;
+    right: 100px;
+    top: 400px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+.small-icon4 {
+    width: 30px;
+    position: absolute;
+    right: 1000px;
+    top: 600px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+.small-icon5 {
+    width: 40px;
+    position: absolute;
+    right: 100px;
+    top: 600px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+.small-icon6 {
+    width: 60px;
+    position: absolute;
+    right: 300px;
+    top: 200px;
+    opacity: 0.3;
+}
+
+.small-icon7 {
+    width: 60px;
+    position: absolute;
+    right: 1200px;
+    top: 600px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+.small-icon8 {
+    width: 30px;
+    position: absolute;
+    right: 50px;
+    top: 700px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+.small-icon9 {
+    width: 30px;
+    position: absolute;
+    right: 615px;
+    top: 1500px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+.small-icon10 {
+    width: 50px;
+    position: absolute;
+    right: 500px;
+    top: 875px;
+    opacity: 0.3; 
+    transform: rotate(45deg);
+}
+
+.small-icon11 {
+    width: 50px;
+    position: absolute;
+    right: 50px;
+    top: 2000px;
+    opacity: 0.3; 
+    transform: rotate(45deg);
+}
+
+.small-icon12 {
+    width: 25px;
+    position: absolute;
+    right: 1000px;
+    top: 2000px;
+    opacity: 0.3; 
+    transform: rotate(45deg);
+}
+
+.small-icon13 {
+    width: 50px;
+    position: absolute;
+    right: 600px;
+    top: 1200px;
+    opacity: 0.3; 
+    transform: rotate(45deg);
+}
+.small-icon14 {
+    width: 30px;
+    position: absolute;
+    right: 1200px;
+    top: 1500px;
+    opacity: 0.3; 
+    transform: rotate(45deg);
+}
+.small-icon15 {
+    width: 25px;
+    position: absolute;
+    right: 1000px;
+    top: 1000px;
+    opacity: 0.3; 
+    transform: rotate(45deg);
+}
+
+/*****************************/
+
+/* Styles for Large Shapes */
 .large-icon1 {
     width: 250px;
     position: absolute;
     top: 120px;
-    left: -150px;
+    left: -140px;
     opacity: 0.3;
 }
 
 .large-icon2 {
-    width: 40px;
+    width: 30px;
     position: absolute;
     right: 850px;
     top: 500px;
     opacity: 0.3;
     transform: rotate(45deg); 
 }
+
+.large-icon3 {
+    width: 250px;
+    position: absolute;
+    right: 1200px;
+    top: 100px;
+    opacity: 0.3;
+    transform: rotate(45deg); 
+}
+
+.large-icon4 {
+    width: 300px;
+    position: absolute;
+    right: 1125px;
+    top: 100px;
+    opacity: 0.3;
+    transform: rotate(90deg); 
+}
+
+/*********************************/
 
 /* Project 1: Solitaire Styles */
 .project1 {
@@ -324,7 +462,7 @@ nav ul li a:hover {
 .nasa {
     max-width: 225px;
     position: relative;
-    margin-left: 100px;
+    margin-left: 175px;
     margin-top: 25px;
 }
 
@@ -371,6 +509,41 @@ nav ul li a:hover {
 }
 
 .p4-btns {
+    display:block;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.div4 {
+    width: 600px;
+    margin-top: -250px;
+}
+
+/* Project 5: Covid Application */
+.covidApp {
+    max-width: 900px;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.covidApp img {
+    width: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.slides-hidden_4 {
+    display: none;
+}
+
+.project5 {
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+
+.p5-btns {
     display:block;
     margin-top: 150px;
     margin-left: 150px;
